@@ -1,0 +1,66 @@
+1.Project Create Command:
+new "project Name" --no-standalone
+
+======================================================================================================================
+2.routing:
+
+At first create component.
+
+
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'seller-auth',
+    component: SellerAuthComponent
+  }
+
+
+code like this in:
+
+const routes: Routes = [..........];
+
+Example:
+========
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'seller-auth',
+    component: SellerAuthComponent
+  }
+];
+
+Then Bound link like this:
+<li><a routerLink='seller-auth'>Seller</a></li>
+
+======================================================================================================================
+
+3.Form:
+
+#Emample:
+
+<div class="seller-auth">
+<div class="sign-up">
+<h1>Seller Signup</h1>
+<form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+    <input class="form-input" type="text" ngModel name="name" placeholder="Enter Name">
+    <input class="form-input" type="password" name="password" ngModel placeholder="Enter password">
+    <input class="form-input" type="text" ngModel name="email" placeholder="Enter Email">
+    <button class="form-button">Signup</button>
+</form>
+</div>
+</div>
+
+## Add a Id in form.=> #sellerSignUp="ngForm". Then Emprot "FormsModule" in app.modules.ts.
+
+## Give a name in every input => <input class="form-input" type="text" ngModel |name="name"| placeholder="Enter Name">
+                                                                              ---------------
+## function for form submit:
+
+signUp(data:object):void{
+    console.warn(data);
+  }
