@@ -1,0 +1,40 @@
+{
+  "seller": [
+    {
+      "name": "Mahadi Amin",
+      "email": "maminemon@test.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "Shad Amin",
+      "email": "shadamin@test.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "Tania Amin",
+      "password": "123",
+      "email": "Taniaamin@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Lucky Amin",
+      "password": "123",
+      "email": "gmail.com",
+      "id": 4
+    },
+    {
+      "name": "a",
+      "password": "123",
+      "email": "gmail.com",
+      "id": 5
+    },
+    {
+      "name": "a",
+      "password": "1",
+      "email": "gmail.com",
+      "id": 6
+    }
+  ]
+}
